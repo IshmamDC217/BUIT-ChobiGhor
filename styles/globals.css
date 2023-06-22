@@ -7,13 +7,25 @@
   color: white;
 }
 
-.navcomp{
+.navcomp {
   display: flex;
 }
 
 .navcomp:hover{
   scale: 1.09;
   transition: 0.2s;
+}
+
+.nav-center-link {
+  color: grey;
+}
+
+.nav-center-link:hover, .nav-center-link.active {
+  color: white;
+}
+
+.nav-center-link.active {
+  font-weight: bold;
 }
 
 section {
