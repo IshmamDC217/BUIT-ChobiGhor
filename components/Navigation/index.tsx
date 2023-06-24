@@ -20,13 +20,13 @@ const Navigation = () => {
     {"name" : "Vacations", "path": "/", "isActive": false},
   ];
 
-  let navLinks = navPaths.map((value) => {
+  let navLinks = navPaths.map((value, index) => {
     let className = "nav-center-link";
     if (value.isActive) {
       className += " active"
     }
     return (
-      <div className={className}>
+      <div className={className} key={index}>
         <Link className="navcomp" href={value.path}>
           {value.name}
         </Link>
