@@ -2,13 +2,17 @@ import {useState} from "react";
 import LoginForm from "./LoginForm";
 import styles from "./styles.module.css";
 
-function LoginButton () {
-  let [isVisible, setIsVisible] = useState(false)
-  console.log(isVisible)
+interface ILoginButton { isDesktopComponent: boolean };
+function LoginButton ({ isDesktopComponent } : ILoginButton) {
+  const [isVisible, setIsVisible] = useState(false)
+  const buttonClass = styles.directButton.concat(isDesktopComponent
+    ? ` ${styles.desktop}`
+    : ` ${styles.mobile}`);
+
   return (
   <div className="login-container">
     <button
-      className={styles.directButton}
+      className={buttonClass}
       onClick={(e) => {
         e.preventDefault();
         setIsVisible(true);

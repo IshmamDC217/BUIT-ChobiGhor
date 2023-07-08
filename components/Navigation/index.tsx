@@ -1,26 +1,13 @@
 import Link from 'next/link';
 import { BsFillHousesFill } from 'react-icons/bs';
-import { ImMenu } from 'react-icons/im';
 
 import React from 'react'
 import LoginButton from './LoginButton';
+import BurgerMenu from './BurgerMenu';
 
-interface PathDescriptor {
-  name: string,
-  path: string,
-  isActive: boolean,
-}
+import { navPaths } from './navData';
 
 const Navigation = () => {
-  // Describe the paths in a single data type so that it is easier to change
-  let navPaths: Array<PathDescriptor> = [
-    {"name" : "Home", "path": "/", "isActive": true},
-    {"name" : "Occasions", "path": "/", "isActive": false},
-    {"name" : "Vacations", "path": "/", "isActive": false},
-    {"name" : "Birthdays", "path": "/", "isActive": false},
-    {"name" : "Vacations", "path": "/", "isActive": false},
-  ];
-
   let navLinks = navPaths.map((value, index) => {
     let className = "nav-center-link";
     if (value.isActive) {
@@ -47,10 +34,8 @@ const Navigation = () => {
         </div>
         {/* <p>&nbsp;</p> */}
 
-        <LoginButton />
-        <div className='md:hidden'>
-          <ImMenu style={{ fontSize: '26px' }} />
-        </div>
+        <LoginButton isDesktopComponent={true} />
+        <BurgerMenu />
       </div>
     </div>
   )

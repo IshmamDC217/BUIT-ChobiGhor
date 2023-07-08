@@ -1,8 +1,12 @@
 import styles from "./styles.module.css";
+import genericStyles from "../generic.module.css";
 
 interface LoginFormParams { isVisible: boolean, setIsVisible: CallableFunction }
 function LoginForm( { isVisible, setIsVisible } : LoginFormParams ) {
-  let className = `${styles.loginForm} ${(isVisible ? styles.visible : styles.invisible)}`
+  let className = `${styles.loginForm} `
+    .concat(isVisible
+      ? genericStyles.visible
+      : genericStyles.invisible);
 
   return (
     <form className={className}>
