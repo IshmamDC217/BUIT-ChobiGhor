@@ -18,7 +18,7 @@ const Homepage: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-1/2 flex justify-center items-center">
+      <div className="w-2/3 flex justify-center items-center">
         <div className="flex flex-col items-end">
           <div className="card bg-white shadow-lg rounded-lg w-[600px] p-10 mb-5" style={{ zIndex: 1 }}>
             <h4 className="text-2xl font-bold mb-4">Occasions</h4>
