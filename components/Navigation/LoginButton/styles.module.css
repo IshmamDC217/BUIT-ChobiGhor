@@ -1,0 +1,106 @@
+.directButton {
+  background-color: transparent;
+  padding: 4px 13px;
+  margin-right: 3px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: -3px -4px 8px transparent;
+  transition: 300ms;
+}
+
+.directButton:hover {
+  scale: 1.05;
+  background-color: #334;
+  box-shadow: 0 4px 8px black;
+}
+
+@media (max-width: 450px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    border: 1px solid #334;
+  }
+}
+
+.loginForm {
+  color: black;
+  background-color: #f3f3f3;
+  margin-right: 16px;
+  padding: 15px;
+  padding-top: 25px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 15px 24px -4px hsla(0deg, 0%, 0%, 40%);
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  right: 0;
+  
+  transition: 300ms;
+}
+
+.closeButton {
+  position: absolute;
+  right: 21px;
+  top: 0;
+}
+
+.labelData {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2px 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.labelData span {
+  font-weight: bold;
+}
+
+.labelData input {
+  outline: none;
+}
+
+.loginFormButton {
+  padding: 5px;
+  border-radius: 7px;
+  border: 1.5px solid #666;
+  transition: 300ms;
+  box-shadow: -3px -6px 3px transparent;
+}
+
+.loginFormButton:hover {
+  color: white;
+  background-color: #555;
+  font-weight: bold;
+  box-shadow: 0 7px 9px -6px #000;
+  scale: 1.03;
+}
+
+@keyframes squeeze-fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: flex;
+    transform: scaleX(1.05);
+    filter: blur(30px);
+  }
+
+  100% {
+    display: flex;
+    opacity: 1;
+    transform: scaleX(1);
+    filter: blur(0);
+  }
+}
+
