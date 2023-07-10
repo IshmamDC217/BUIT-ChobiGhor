@@ -13,6 +13,8 @@ const Homepage: React.FC = () => {
                 <h3>Banani, Dhaka</h3>
               </div>
               <div className="hero-image hi-1 backgroundTint"></div>
+              <div className="hero-image hi-2 backgroundTint"></div>
+              <div className="hero-image hi-3 backgroundTint"></div>
             </div>
           </div>
         </div>
