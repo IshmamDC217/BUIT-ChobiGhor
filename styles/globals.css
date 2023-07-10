@@ -18,10 +18,12 @@
 
 .nav-center-link {
   color: grey;
+  transition: 300ms;
 }
 
 .nav-center-link:hover, .nav-center-link.active {
   color: white;
+  scale: 1.02;
 }
 
 .nav-center-link.active {

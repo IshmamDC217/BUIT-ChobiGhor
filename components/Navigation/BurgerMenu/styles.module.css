@@ -1,5 +1,5 @@
 .menu {
-  background-color: black;
+  background-color: #000000ea;
   position: absolute;
   left: 0;
   top: 0;
@@ -8,5 +8,23 @@
   padding: 13px 18px;
   flex-direction: column;
   justify-content: space-between;
+  backdrop-filter: blur(30px);
+}
+
+.burger {
+  background-color: transparent;
+  font-size: 32px;
+  cursor: pointer;
+  transition: 300ms;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: -3px -4px 8px transparent;
+}
+
+.burger:hover, .burger:active {
+  background-color: #445;
+  scale: 1.05;
+  box-shadow: 0 4px 8px black;
+  margin-bottom: 2px;
 }
 
