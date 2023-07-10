@@ -10,7 +10,6 @@ let navPaths: Array<PathDescriptor> = [
   {"name" : "Occasions", "path": "/", "isActive": false},
   {"name" : "Vacations", "path": "/", "isActive": false},
   {"name" : "Birthdays", "path": "/", "isActive": false},
-  {"name" : "Vacations", "path": "/", "isActive": false},
 ];
 
 export { navPaths }
