@@ -18,7 +18,6 @@ export default function Home() {
 
       <main>
         <Homepage/>
-        <Homepage2/>
       </main>
 
     </div>
