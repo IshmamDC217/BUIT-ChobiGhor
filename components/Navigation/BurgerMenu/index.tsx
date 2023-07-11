@@ -24,7 +24,7 @@ function BurgerMenu () {
     }
     return (
       <div className={className} key={index}>
-        <Link className="navcomp" href={value.path}>
+        <Link href={value.path}>
           {value.name}
         </Link>
       </div>
@@ -34,7 +34,7 @@ function BurgerMenu () {
   return (
     <div className='md:hidden'>
       <ImMenu
-        style={{ fontSize: '26px' }} 
+        className={styles.burger}
         onClick={swapVisibility()} 
       />
       <div className={`${styles.menu} ${visibility} flex justify-between`}>

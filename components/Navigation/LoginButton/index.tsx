@@ -5,14 +5,14 @@ import styles from "./styles.module.css";
 interface ILoginButton { isDesktopComponent: boolean };
 function LoginButton ({ isDesktopComponent } : ILoginButton) {
   const [isVisible, setIsVisible] = useState(false)
-  const buttonClass = styles.directButton.concat(isDesktopComponent
+  const componentDevice = isDesktopComponent
     ? ` ${styles.desktop}`
-    : ` ${styles.mobile}`);
+    : ` ${styles.mobile}`;
 
   return (
-  <div className="login-container">
+  <div className={"login-container" + componentDevice}>
     <button
-      className={buttonClass}
+      className={styles.directButton + componentDevice}
       onClick={(e) => {
         e.preventDefault();
         setIsVisible(true);

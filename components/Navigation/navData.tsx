@@ -7,10 +7,9 @@ interface PathDescriptor {
 
 let navPaths: Array<PathDescriptor> = [
   {"name" : "Home", "path": "/", "isActive": true},
-  {"name" : "Occasions", "path": "/", "isActive": false},
+  {"name" : "Occasions", "path": "/occasions", "isActive": false},
   {"name" : "Vacations", "path": "/", "isActive": false},
   {"name" : "Birthdays", "path": "/", "isActive": false},
-  {"name" : "Vacations", "path": "/", "isActive": false},
 ];
 
 export { navPaths }
