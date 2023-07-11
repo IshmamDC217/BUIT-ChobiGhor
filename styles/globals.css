@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 .navbar {
-  background-color: #1a202c;
+  background-color: #00000080;
   color: white;
+  position: fixed;
+  width: 100vw;
+  backdrop-filter: blur(2px);
 }
 
 .navcomp {
