@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .navbar {
   background-color: #00000080;
   color: white;
@@ -173,7 +175,7 @@ header {
 
 .card {
   transition: transform 0.3s ease;
-  background: linear-gradient(45deg, #1a202c, #1a202cd5)
+  background: linear-gradient(45deg, #00000080, #29282880)
 }
 
 .eventcard {
@@ -182,4 +184,26 @@ header {
 
 .card:hover {
   transform: scale(1.1);
+}
+
+.dhakacard {
+  border-radius: 80%;
+}
+
+.occasioncard {
+  background: linear-gradient(45deg, #00000080, #29282880)
+}
+
+.occasioncard:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.occasioncard {
+  filter: grayscale(100%);
+  transition: filter 500ms ease;
+}
+
+.occasioncard:hover{
+  filter: grayscale(0%)
 }
