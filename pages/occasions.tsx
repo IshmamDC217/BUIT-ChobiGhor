@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navigation from "../components/Navigation"
-import Homepage2 from '@/components/Homepage2'
+import Occasions from '@/components/Occasions'
 
 
 export default function WorkPage() {
@@ -18,7 +18,7 @@ export default function WorkPage() {
             </header>
 
             <main>
-                <Homepage2 />
+                <Occasions />
             </main>
         </div>
     )
