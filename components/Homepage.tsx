@@ -9,7 +9,7 @@ const Homepage: React.FC = () => {
             <div className="backdrop">
               <div className="hero-info">
                 <h2 className="my-8">BUIT</h2>
-                <h1 className='max-w-5xl'>নিভৃত বাড়িতে স্বাগতম</h1>
+                <h1 className='max-w-5xl font-bold'>নিভৃত বাড়িতে স্বাগতম</h1>
                 <h3>Banani, Dhaka</h3>
               </div>
               <div className="hero-image hi-1 backgroundTint"></div>
