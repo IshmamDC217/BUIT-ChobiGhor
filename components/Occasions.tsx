@@ -5,6 +5,9 @@ import parxtest3 from '../public/parxtest3.jpg'
 import eid from '../public/eid.jpg'
 import outings from '../public/outings.jpg'
 import gatherings from '../public/gatherings.jpg'
+import { BsMoonStarsFill } from 'react-icons/bs'
+import { MdFamilyRestroom } from 'react-icons/md'
+import { AiFillCar } from 'react-icons/ai'
 
 const Occasions: React.FC = () => {
   return (
@@ -57,15 +60,24 @@ const Occasions: React.FC = () => {
           }}>
             <div className="dhakacard flex flex-row justify-center items-center">
               <div className="occasioncard bg-white shadow-lg rounded-2xl w-[500px] py-20 border text-white p-10 mb-5 mx-6" style={{ zIndex: 1 }}>
-                <h4 className="text-2xl font-bold mb-4">Eid-al-Fitr</h4>
+                <div className='flex row justify-content mx-32 w-[270px]'>
+                  <h4 className="text-2xl font-bold mb-4">Eid-al-Fitr</h4>
+                  <BsMoonStarsFill className='moon mx-4 my-1 text-xl' />
+                </div>
                 <img className='border rounded-lg' src={eid.src} />
               </div>
               <div className="occasioncard bg-white shadow-lg rounded-2xl w-[500px] py-20 border text-white p-10 mb-5 mx-6" style={{ zIndex: 1 }}>
-                <h4 className="text-2xl font-bold mb-4">Family Gatherings</h4>
+                <div className='flex row justify-content mx-24 w-[270px]'>
+                  <h4 className="text-2xl font-bold mb-4">Family Gatherings</h4>
+                  <MdFamilyRestroom className='fambam mx-4 my-1 text-2xl' />
+                </div>
                 <img className='border rounded-lg' src={gatherings.src} />
               </div>
               <div className="occasioncard bg-white shadow-lg rounded-2xl w-[500px] py-20 border text-white p-10 mb-5 mx-6" style={{ zIndex: 1 }}>
-                <h4 className="text-2xl font-bold mb-4">Family Outings</h4>
+                <div className='flex row justify-content mx-28 w-[270px]'>
+                  <h4 className="text-2xl font-bold mb-4">Family Outings</h4>
+                  <AiFillCar className='car mx-4 my-1 text-2xl' />
+                </div>
                 <img className='border rounded-lg' src={outings.src} />
               </div>
             </div>

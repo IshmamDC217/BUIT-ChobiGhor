@@ -205,5 +205,14 @@ header {
 }
 
 .occasioncard:hover{
-  filter: grayscale(0%)
+  filter: grayscale(0%);
+  .moon{
+    color: rgb(230, 205, 66);
+  }
+  .fambam{
+    color: rgb(50, 50, 219);
+  }
+  .car{
+    color: rgb(221, 71, 71);
+  }
 }
