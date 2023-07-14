@@ -173,19 +173,6 @@ header {
   }
 }
 
-.card {
-  transition: transform 0.3s ease;
-  background: linear-gradient(45deg, #00000080, #29282880)
-}
-
-.eventcard {
-  border-radius: 80%;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
 .dhakacard {
   border-radius: 80%;
 }
@@ -215,4 +202,33 @@ header {
   .car{
     color: rgb(221, 71, 71);
   }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  background: linear-gradient(45deg, #00000080, #29282880)
+}
+
+.eventcard {
+  border-radius: 80%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
 }
