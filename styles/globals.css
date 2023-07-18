@@ -47,6 +47,7 @@ body {
   --black: #242424;
   --white: #f5f5f5;
   --pill: #e0d4be;
+  background-color: black;
 }
 
 .pageWrap {
@@ -74,6 +75,7 @@ header {
 }
 
 .hero-info {
+  width: 50vw;
   position: absolute;
   top: 50%;
   left: 5%;
@@ -219,9 +221,12 @@ header {
   animation: slideIn 0.5s ease-in-out forwards;
 }
 
-.card {
+.card--homepage {
   transition: transform 0.3s ease;
-  background: linear-gradient(45deg, #00000080, #29282880)
+  background: linear-gradient(45deg, #00000080, #29282880);
+  border: 1px solid #66666640;
+  backdrop-filter: blur(5px);
+  box-shadow: -16px 13px 16px -6px #000000A0;
 }
 
 .eventcard {

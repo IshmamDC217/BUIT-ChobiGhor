@@ -22,6 +22,10 @@ const Homepage: React.FC = () => {
     }
   }, [inView1, inView2, inView3]);
 
+  let cardClass = `card--homepage bg-white shadow-lg rounded-2xl w-[42vw] border text-white p-10 mb-5 ${
+    animate ? 'animate-slideIn' : ''
+  }`;
+
   return (
     <section className="flex">
       <div className="w-1/2">
@@ -44,27 +48,21 @@ const Homepage: React.FC = () => {
       <div className="eventcard w-2/3 flex justify-center items-center">
         <div className="flex flex-col items-end">
           <div
-            className={`card bg-white shadow-lg rounded-2xl w-[700px] border text-white p-10 mb-5 ${
-              animate ? 'animate-slideIn' : ''
-            }`}
+            className={cardClass}
             ref={ref1}
           >
             <h4 className="text-4xl font-bold mb-4">ছাদ</h4>
             <p className="text-gray-400">Lorem ipsum</p>
           </div>
           <div
-            className={`card bg-white shadow-lg rounded-2xl w-[700px] border text-white p-10 mb-5 ${
-              animate ? 'animate-slideIn' : ''
-            }`}
+            className={cardClass}
             ref={ref2}
           >
             <h4 className="text-4xl font-bold mb-4">বাগান</h4>
             <p className="text-gray-400">Lorem ipsum</p>
           </div>
           <div
-            className={`card bg-white shadow-lg rounded-2xl w-[700px] border text-white p-10 mb-5 ${
-              animate ? 'animate-slideIn' : ''
-            }`}
+            className={cardClass}
             ref={ref3}
           >
             <h4 className="text-4xl font-bold mb-4">পিছনবাড়ি</h4>
